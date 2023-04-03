@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');/*font-family: 'Parisienne', cursive;*/
+
+* {
+  font-family: 'Oswald';
+}
+
+.container1 {  /*services sections style*/
+width: 100%;
+height: 30vh;
+background: #ffffff;
+padding: 0 0;
+}
+.container1 h1 {  /*the title style our services */
+text-align: center;
+padding-top: -1%;
+margin-bottom: 45px;
+font-weight: 600;
+font-size: 35px;
+font-family: 'Parisienne', cursive;
+position: relative;
+}
+.container1 h1::after {   /* Our section title underline */
+content:'';
+background: #2ea3dd;
+width: 120px;
+height: 5px;
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+.row {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(220px,0fr));  /* bech nadhmou bihom kol star 9adech fih men services*/
+grid-gap: 30px;
+margin-left: 5%;
+align-items: center;
+}
+.services {
+width: 200px;
+text-align: center;
+padding: 25px 10px;
+margin-left: 2%;
+margin-right: 15px;
+border: 1px solid #2ea3dd;
+font-size: 14px;
+cursor: pointer;
+background: transparent;
+transition: transform 0.4s, background 0.35s;
+}
+.services .icons {
+font-size: 40px;
+margin-bottom: 5px;
+color: #2ea3dd;
+}
+.services h2 {
+font-weight: 600;
+margin-bottom: 9px;
+}
+.services:hover {
+background: #2ea3dd;
+color: #fff;
+transform: scale(1.1);
+}
+.services:hover .icons {
+  color: #fff;
+}
+.numbers {
+  position: relative;
+  font-family:'Oswald';
+  font-size: 50px;
+  padding-bottom: -40px;
+}
+  
